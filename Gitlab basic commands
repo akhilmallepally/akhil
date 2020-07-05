@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+Git easy now...!
+
+</head>
+
+<body>
+
+<h3>Using GIT from command line in a GNU/Linux OS.<h3
+<p>Let us try to clone a remote project and do some experiments using GIT commands in a GNU/Linux OS.</p>
+
+<p>First off, you are here because you already have a gitlab account, atleast I assumee so. If not, don't delay. Sign up. I tried to make this as engaging as possible, as you should feel the author is explaining you rather reading an article</p>
+
+<p>You have your GITLAB account setup now. Now, let's go to terminal, CTRL+ALT+T will take you to terminal/konsole.</p>
+
+<p>Just want to type some commands. Ho! Wait. You need to have some basic requirements to be there beforehand. But what are they? How would you know, right! I help you dive in. 
+Just see if the below conditions are satisfied. Else, click on them.</p>
+<ol>
+<li>1. Working Linux Environment.</li>
+<li>2. GIT installed.</li>
+<li>3. Configuring your GIT with SSH keys.</li>
+</ol>
+
+
+<p>Now, we start from very basic stuff..</p>
+
+<p>
+1. Search for the GIT version by<br>
+    git --version<br>
+    <br>
+    It should display *git version 2.17.1*<br>
+    <br>
+    If GIT is not installed in your local, don't worry, here it is. *https://about.gitlab.com/install/*
+    </p>
+    
+    <p>
+    
+2. It’s time to configure in your local system.<br>
+<br>
+   git config --global user.name "akhil" <br>             
+    git config --global user.email "akhil@swecha.net"<br>
+    <br>
+Note : --global tells your Gitlab to use this information always for anything you do on your Computer.<br>
+<br>
+  Good. Now the configuration is done. But how do I check whether it’s done or not? Just try this and see what you get<br>
+  <br>
+	git config --global --list
+	
+	</p>
+	<p>
+3. Cloning part is on the way. It’s very simple.<br>
+<br>
+    git clone code.swecha.org/akhil/Project-name . <br>
+    <br>
+	The ‘.’ in the above command says to clone the project into the current directory<br>
+	<br>
+	Tadaa! The project is cloned.<br>
+
+Note : Try   git remote -v  and  git branch -b, they gives the information about the remote  repository and banches respectively.
+</p>
+4. Everything is fine, does the git knows the folders that we have just cloned is a repository.<br> No, because it’s just a folder in my Local. That’s where initialising part comes.<br>
+<br>
+	git init <br>
+	<br>
+	This command instructs git to start to track that folder/directory as a repository.
+	
+<p>5. Commit changes :<br>
+	create an empty file through terminal.<br>
+		touch test and write some code or text in the file.<br>
+		
+	To check the changes made/current status :<br>
+		git status<br>
+		
+	To add all the files :<br>
+		git add -A<br>
+		
+	In case, if you want to add only one or specific file<br>
+		git add *file name*<br>
+		
+	Let’s commit these changes :<br>
+
+		git commit -m “first commit”
+</p>
+
+<p>6. We are almost done. The final steps are to push the code into the original repo. <br>
+		
+		git push origin master </p>
+		
+		
+<p>This is a basic idea that you should have when you work on a GIT using commands. To explore more, click here. </p>
+
+</body<
+
+</html>
