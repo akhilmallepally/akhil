@@ -1,0 +1,40 @@
+Installation :
+
+
+Images to containers :
+
+docker ps
+
+docker images - to show images
+
+docker con
+
+docker run -ti imageName/ID
+
+
+docker ps --format $FORMAT
+
+
+
+docker ps -a  - to show all images
+
+
+Containers to new images :
+
+
+docker ps -l  - to show last exited images
+
+docker run -ti imageID
+
+- create a new file in this image
+- exit
+
+docker commit previousimageID
+ - new image is formed. check with docker ps
+
+docker tage newimageID giveanewname
+
+(Or run docker commit oldimagename newimagename1)
+
+
+
