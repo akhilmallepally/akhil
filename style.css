@@ -2495,3 +2495,10 @@ select.mobile-device {
     background: linear-gradient();
     color: white;
   } 
+
+    
+  /* Linkedin */
+  .fa-linkedin {
+    background: linear-gradient();
+    color: blue;
+  } 
